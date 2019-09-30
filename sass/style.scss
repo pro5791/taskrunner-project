@@ -1,0 +1,30 @@
+/* Variables */
+$font-one: arial;
+
+$color-one: #fed136;
+$color-light: #fff;
+$color-dark: #000;
+
+/* Global */
+
+/* Nav */
+
+
+/* Splash */
+.splash {
+        height: 100vh;
+        background-image: url("/images/bg.png");
+        position: relative;
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed;
+}
+.logo {
+    position: absolute;
+    color: $color-one;
+    color: $color-light;
+    font-family: $font-one;
+    font-size: 26px;
+    color: $color-one;
+    letter-spacing: 1.3px;
+}
