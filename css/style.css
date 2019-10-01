@@ -121,20 +121,20 @@ body a:hover {
   background: #fff;
 }
 
-.services .row {
+.services .column {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-align: center;
       align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -ms-flex-pack: center;
+      justify-content: center;
   margin: 80px 40px;
   padding: 20px 20px;
 }
 
-.services .row .section-title {
+.services .column .section-title {
   color: #000;
   font-family: "Roboto", sans-serif;
   font-size: 50px;
@@ -143,10 +143,64 @@ body a:hover {
   margin: 0;
 }
 
-.services .row p {
+.services .column .section-subtitle {
   color: #777;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-style: italic;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex: 0 0 33.333%;
+      flex: 0 0 33.333%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 40px 20% 40px 20%;
+}
+
+.row .box {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.row .box .box-image {
+  border-radius: 100%;
+  box-sizing: border-box;
+  border: 3px solid #fed136;
+  height: 70px;
+  width: 70px;
+}
+
+.row .box .box-image img {
+  padding: 10px 0 0 10px;
+  height: 42px;
+  width: 42px;
+}
+
+.row .box .box-title {
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  margin: 50px 0 0 20px;
+}
+
+.row .box p {
+  width: 275px;
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  line-height: 1;
+  margin: 20px 0 0 20px;
 }
 /*# sourceMappingURL=style.css.map */
