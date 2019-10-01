@@ -3,6 +3,7 @@ $font-one: 'Open Sans', sans-serif;
 $font-two: 'Roboto', sans-serif;
 
 $color-one: #fed136;
+$color-two: #777;
 $color-light: #fff;
 $color-dark: #000;
 
@@ -13,7 +14,6 @@ body {
     color: $color-dark;
     font-family: $font-two;
     font-size: 16px;
-    line-height: 1.7;
     a {
         color: $color-light;
         text-decoration: none;
@@ -23,10 +23,7 @@ body {
     }
 }
 
-/* Nav */
-
-
-/* Splash */
+/* Splash & Nav */
 .splash {
     height: 100vh;
     background-image: url("/images/bg.png");
@@ -38,6 +35,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-around;
+        margin: 0 40px;
         padding: 20px 20px;
         .logo {
             color: $color-one;
@@ -63,16 +61,18 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 40px 40px;
+    padding: 20px 20px;
     .welcome {
         color: $color-light;
-        font-family: "Droid Serif";
+        font-family: $font-one;
         font-size: 50px;
         font-style: italic;
         letter-spacing: -1px;
     }
     .nice {
         color: $color-light;
-        font-family: Montserrat;
+        font-family: $font-two;
         font-size: 85px;
         font-weight: 700;
         text-transform: uppercase;
@@ -103,3 +103,28 @@ body {
 }
 
 
+.services {
+    background: $color-light;
+    .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin: 80px 40px;
+        padding: 20px 20px;
+        .section-title {
+            color: $color-dark;
+            font-family: $font-two;
+            font-size: 50px;
+            font-weight: 700;
+            letter-spacing: -1px;
+            margin: 0;
+        }
+        p {
+        color: $color-two;
+        font-family: $font-two;
+        font-size: 18px;
+        font-style: italic;
+        }
+    }
+}
