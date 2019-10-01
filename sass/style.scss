@@ -1,5 +1,6 @@
 /* Variables */
-$font-one: arial;
+$font-one: 'Open Sans', sans-serif;
+$font-two: 'Roboto', sans-serif;
 
 $color-one: #fed136;
 $color-light: #fff;
@@ -7,24 +8,78 @@ $color-dark: #000;
 
 /* Global */
 
+body {
+    margin: 0;
+    color: $color-dark;
+    font-family: $font-two;
+    font-size: 16px;
+    line-height: 1.7;
+    a {
+        color: $color-light;
+        text-decoration: none;
+        &:hover {
+            color: $color-one;
+        }    
+    }
+}
+
 /* Nav */
 
 
 /* Splash */
 .splash {
-        height: 100vh;
-        background-image: url("/images/bg.png");
-        position: relative;
-        background-position: center center;
-        background-size: cover;
-        background-attachment: fixed;
+    height: 100vh;
+    background-image: url("/images/bg.png");
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 20px 20px;
+        .logo {
+            color: $color-one;
+            color: $color-light;
+            font-family: $font-one;
+            font-size: 26px;
+            color: $color-one;
+            letter-spacing: 1.3px;
+        }
+        .nav {
+            width: 650px;
+            li {
+                display: inline-block;
+                margin-right: 36px;
+                position: relative;
+            }    
+        }
+    }
 }
-.logo {
-    position: absolute;
-    color: $color-one;
-    color: $color-light;
-    font-family: $font-one;
-    font-size: 26px;
-    color: $color-one;
-    letter-spacing: 1.3px;
+
+.items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .welcome {
+        color: $color-light;
+        font-family: "Droid Serif";
+        font-size: 50px;
+        font-style: italic;
+        letter-spacing: -1px;
+    }
+    .nice {
+        color: $color-light;
+        font-family: Montserrat;
+        font-size: 85px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: -1.88px;
+    }
 }
+
+
+
+

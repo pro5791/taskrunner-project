@@ -1,5 +1,22 @@
 /* Variables */
 /* Global */
+body {
+  margin: 0;
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+body a {
+  color: #fff;
+  text-decoration: none;
+}
+
+body a:hover {
+  color: #fed136;
+}
+
 /* Nav */
 /* Splash */
 .splash {
@@ -11,13 +28,60 @@
   background-attachment: fixed;
 }
 
-.logo {
-  position: absolute;
+.splash .row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 20px 20px;
+}
+
+.splash .row .logo {
   color: #fed136;
   color: #fff;
-  font-family: arial;
+  font-family: "Open Sans", sans-serif;
   font-size: 26px;
   color: #fed136;
   letter-spacing: 1.3px;
+}
+
+.splash .row .nav {
+  width: 650px;
+}
+
+.splash .row .nav li {
+  display: inline-block;
+  margin-right: 36px;
+  position: relative;
+}
+
+.items {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.items .welcome {
+  color: #fff;
+  font-family: "Droid Serif";
+  font-size: 50px;
+  font-style: italic;
+  letter-spacing: -1px;
+}
+
+.items .nice {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 85px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -1.88px;
 }
 /*# sourceMappingURL=style.css.map */
