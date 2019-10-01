@@ -80,6 +80,26 @@ body {
     }
 }
 
-
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .btn-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 240px;
+        height: 65px;
+        background-color: $color-one;
+        border-radius: 1px;
+        font-size: 18px;
+        text-decoration: none;
+        cursor: pointer;
+        border-width: 2px;
+        transition: all 1s; }
+        .btn-item:hover {
+            color: $color-light;
+    }
+}
 
 

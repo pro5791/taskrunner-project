@@ -84,4 +84,35 @@ body a:hover {
   text-transform: uppercase;
   letter-spacing: -1.88px;
 }
+
+.btn {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.btn .btn-item {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 240px;
+  height: 65px;
+  background-color: #fed136;
+  border-radius: 1px;
+  font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
+  border-width: 2px;
+  transition: all 1s;
+}
+
+.btn .btn-item:hover {
+  color: #fff;
+}
 /*# sourceMappingURL=style.css.map */
