@@ -1,4 +1,9 @@
+/* Bootstrap */
+@import "../vendor/bootstrap-grid.scss";
+
+
 /* Variables */
+$font-logo: 'Leckerli One', cursive;
 $font-one: 'Open Sans', sans-serif;
 $font-two: 'Roboto', sans-serif;
 
@@ -19,7 +24,7 @@ body {
         text-decoration: none;
         &:hover {
             color: $color-one;
-        }    
+        }
     }
 }
 
@@ -40,7 +45,7 @@ body {
         .logo {
             color: $color-one;
             color: $color-light;
-            font-family: $font-one;
+            font-family: $font-logo;
             font-size: 26px;
             color: $color-one;
             letter-spacing: 1.3px;
@@ -51,7 +56,7 @@ body {
                 display: inline-block;
                 margin-right: 36px;
                 position: relative;
-            }    
+            }
         }
     }
 }
@@ -102,9 +107,10 @@ body {
     }
 }
 
-
 .services {
     background: $color-light;
+    margin: 80px 40px;
+    padding: 20px 20px;
     .column {
         display: flex;
         flex-direction: column;
@@ -129,42 +135,21 @@ body {
     }
 }
 
-.row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex: 0 0 33.333%;
-    justify-content: space-around;
-    margin: 40px 20% 40px 20%;
-    .box {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        .box-image {
-            border-radius: 100%;
-            box-sizing: border-box;
-            border: 3px solid $color-one;
-            height: 70px;
-            width: 70px;
-            img {
-                padding: 10px 0 0 10px;
-                height: 42px;
-                width: 42px
-            }
-        }
-        .box-title {
-            color: $color-dark;
-            font-family: $font-two;
-            font-size: 24px;
-            margin: 50px 0 0 20px;
-        }
-        p {
-            width: 275px;
-            color: $color-dark;
-            font-family: $font-two;
-            line-height: 1;
-            margin: 20px 0 0 20px;
-        }
-    } 
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 20px;
+  padding: 20px 20px;
+  i {
+    text-align: center;
+    font-size: 30px;
+    background: #ff5252;
+    color: #ffffff;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+  }
 }
+
