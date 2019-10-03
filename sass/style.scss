@@ -9,11 +9,11 @@ $font-two: 'Roboto', sans-serif;
 
 $color-one: #fed136;
 $color-two: #777;
+$color-three: #f7f7f7;
 $color-light: #fff;
 $color-dark: #000;
 
 /* Global */
-
 body {
     margin: 0;
     color: $color-dark;
@@ -44,10 +44,8 @@ body {
         padding: 20px 20px;
         .logo {
             color: $color-one;
-            color: $color-light;
             font-family: $font-logo;
             font-size: 26px;
-            color: $color-one;
             letter-spacing: 1.3px;
         }
         .nav {
@@ -59,54 +57,53 @@ body {
             }
         }
     }
-}
-
-.items {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 40px 40px;
-    padding: 20px 20px;
-    .welcome {
-        color: $color-light;
-        font-family: $font-one;
-        font-size: 50px;
-        font-style: italic;
-        letter-spacing: -1px;
+    .items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 40px 40px;
+        padding: 20px 20px;
+        .welcome {
+            color: $color-light;
+            font-family: $font-one;
+            font-size: 50px;
+            font-style: italic;
+            letter-spacing: -1px;
+        }
+        .nice {
+            color: $color-light;
+            font-family: $font-two;
+            font-size: 85px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: -1.88px;
+        }
     }
-    .nice {
-        color: $color-light;
-        font-family: $font-two;
-        font-size: 85px;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: -1.88px;
-    }
-}
-
-.btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    .btn-item {
+    .btn {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 240px;
-        height: 65px;
-        background-color: $color-one;
-        border-radius: 1px;
-        font-size: 18px;
-        text-decoration: none;
-        cursor: pointer;
-        border-width: 2px;
-        transition: all 1s; }
+        .btn-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 240px;
+            height: 65px;
+            background-color: $color-one;
+            border-radius: 1px;
+            font-size: 18px;
+            text-decoration: none;
+            cursor: pointer;
+            border-width: 2px;
+            transition: all 1s; }
         .btn-item:hover {
             color: $color-light;
+        }
     }
 }
 
+/* Services */
 .services {
     background: $color-light;
     margin: 40px 20px;
@@ -163,6 +160,64 @@ body {
         }
     }
 }
+
+/* Our Portfolio */
+.portfolio {
+    background: $color-three;
+    margin: 40px 20px;
+    padding: 20px 20px;
+    .column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 20px;
+        padding: 20px 20px;
+        .section-title {
+            color: $color-dark;
+            font-family: $font-two;
+            font-size: 50px;
+            font-weight: 700;
+            letter-spacing: -1px;
+            margin: 0;
+        }
+        .section-subtitle {
+            color: $color-two;
+            font-family: $font-two;
+            font-size: 18px;
+            font-style: italic;
+        }
+    }
+    .image {
+        width: 290px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    .box-text {
+        width: 290px;
+        text-align: center;
+        background-color: $color-light;
+        margin: 0 0 40px 0;
+        padding: 30px 30px;
+        h3 {
+            font-size: 20px;
+            font-weight: 700;
+            margin: 0;
+            padding: 0;
+        }
+        p {
+            font-size: 15px;
+            color: $color-two;
+            font-style: italic;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
 
 
 

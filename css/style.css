@@ -708,10 +708,8 @@ body a:hover {
 
 .splash .row .logo {
   color: #fed136;
-  color: #fff;
   font-family: "Leckerli One", cursive;
   font-size: 26px;
-  color: #fed136;
   letter-spacing: 1.3px;
 }
 
@@ -725,7 +723,7 @@ body a:hover {
   position: relative;
 }
 
-.items {
+.splash .items {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -738,7 +736,7 @@ body a:hover {
   padding: 20px 20px;
 }
 
-.items .welcome {
+.splash .items .welcome {
   color: #fff;
   font-family: "Open Sans", sans-serif;
   font-size: 50px;
@@ -746,7 +744,7 @@ body a:hover {
   letter-spacing: -1px;
 }
 
-.items .nice {
+.splash .items .nice {
   color: #fff;
   font-family: "Roboto", sans-serif;
   font-size: 85px;
@@ -755,7 +753,7 @@ body a:hover {
   letter-spacing: -1.88px;
 }
 
-.btn {
+.splash .btn {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -764,7 +762,7 @@ body a:hover {
       justify-content: center;
 }
 
-.btn .btn-item {
+.splash .btn .btn-item {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -782,10 +780,11 @@ body a:hover {
   transition: all 1s;
 }
 
-.btn .btn-item:hover {
+.splash .btn .btn-item:hover {
   color: #fff;
 }
 
+/* Services */
 .services {
   background: #fff;
   margin: 40px 20px;
@@ -856,5 +855,76 @@ body a:hover {
 .services .box-text p {
   font-size: 18px;
   color: #777;
+}
+
+/* Our Portfolio */
+.portfolio {
+  background: #f7f7f7;
+  margin: 40px 20px;
+  padding: 20px 20px;
+}
+
+.portfolio .column {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin: 20px 20px;
+  padding: 20px 20px;
+}
+
+.portfolio .column .section-title {
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin: 0;
+}
+
+.portfolio .column .section-subtitle {
+  color: #777;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.portfolio .image {
+  width: 290px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.portfolio .box-text {
+  width: 290px;
+  text-align: center;
+  background-color: #fff;
+  margin: 0 0 40px 0;
+  padding: 30px 30px;
+}
+
+.portfolio .box-text h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+.portfolio .box-text p {
+  font-size: 15px;
+  color: #777;
+  font-style: italic;
+  margin: 0;
+  padding: 0;
 }
 /*# sourceMappingURL=style.css.map */
