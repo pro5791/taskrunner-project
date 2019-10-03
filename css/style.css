@@ -788,7 +788,7 @@ body a:hover {
 
 .services {
   background: #fff;
-  margin: 80px 40px;
+  margin: 40px 20px;
   padding: 20px 20px;
 }
 
@@ -801,7 +801,7 @@ body a:hover {
       align-items: center;
   -ms-flex-pack: center;
       justify-content: center;
-  margin: 80px 40px;
+  margin: 20px 20px;
   padding: 20px 20px;
 }
 
@@ -821,7 +821,7 @@ body a:hover {
   font-style: italic;
 }
 
-.icons {
+.services .icons {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -832,14 +832,29 @@ body a:hover {
   padding: 20px 20px;
 }
 
-.icons i {
+.services .icons i {
   text-align: center;
-  font-size: 30px;
-  background: #ff5252;
-  color: #ffffff;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
+  font-size: 40px;
+  background: #fff;
+  color: #fed136;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
   border-radius: 50%;
+  border: 3px solid;
+}
+
+.services .box-text {
+  text-align: center;
+}
+
+.services .box-text h3 {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.services .box-text p {
+  font-size: 18px;
+  color: #777;
 }
 /*# sourceMappingURL=style.css.map */

@@ -109,14 +109,14 @@ body {
 
 .services {
     background: $color-light;
-    margin: 80px 40px;
+    margin: 40px 20px;
     padding: 20px 20px;
     .column {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin: 80px 40px;
+        margin: 20px 20px;
         padding: 20px 20px;
         .section-title {
             color: $color-dark;
@@ -127,29 +127,42 @@ body {
             margin: 0;
         }
         .section-subtitle {
-        color: $color-two;
-        font-family: $font-two;
-        font-size: 18px;
-        font-style: italic;
+            color: $color-two;
+            font-family: $font-two;
+            font-size: 18px;
+            font-style: italic;
+        }
+    }
+    .icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 20px;
+        padding: 20px 20px;
+        i {
+            text-align: center;
+            font-size: 40px;
+            background: $color-light;
+            color: $color-one;
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+            border-radius: 50%;
+            border: 3px solid;
+        }
+    }
+    .box-text {
+        text-align: center;
+        h3 {
+            font-size: 25px;
+            font-weight: 700;
+        }
+        p {
+            font-size: 18px;
+            color: $color-two;
         }
     }
 }
 
-.icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px 20px;
-  padding: 20px 20px;
-  i {
-    text-align: center;
-    font-size: 30px;
-    background: #ff5252;
-    color: #ffffff;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    border-radius: 50%;
-  }
-}
+
 
